@@ -4,7 +4,7 @@ const floralImg = "/flores.png";
 
 const FloralFrame = () => {
   return (
-    <div className="fixed inset-0 z-40 pointer-events-none overflow-hidden">
+    <div className="fixed top-0 left-0 w-full h-[100svh] z-40 pointer-events-none overflow-hidden">
       
       {/* Esquina Superior Izquierda */}
       <img 
