@@ -1,0 +1,58 @@
+@import "tailwindcss"; 
+
+/* --- ANIMACIONES PERSONALIZADAS --- */
+
+/* 1. Efecto de "Dibujado" del Marco (Se abre desde el centro) */
+@keyframes drawFrame {
+  0% {
+    clip-path: inset(50% 50% 50% 50%); /* Empieza invisible en el centro */
+    opacity: 0;
+  }
+  100% {
+    clip-path: inset(0 0 0 0); /* Se abre completo */
+    opacity: 1;
+  }
+}
+
+/* 2. Aparecer suavemente hacia arriba */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 3. Pop In (para el botón de música) */
+@keyframes popIn {
+  0% { transform: scale(0); opacity: 0; }
+  80% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Clases de utilidad para usar en React */
+.animate-draw-frame {
+  animation: drawFrame 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-fade-in-up {
+  opacity: 0; /* Empieza invisible */
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-pop-in {
+  opacity: 0;
+  animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Retrasos (Delays) para la secuencia */
+.delay-100 { animation-delay: 0.1s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-1000 { animation-delay: 1.0s; }
+.delay-1500 { animation-delay: 1.5s; }
+.delay-2000 { animation-delay: 2.0s; } /* Para el MusicPlayer */
