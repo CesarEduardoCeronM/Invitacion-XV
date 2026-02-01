@@ -3,7 +3,7 @@ import { RoyalBackground, RoyalDivider } from './Hero';
 
 const Details = () => {
   return (
-    <div className="relative w-full py-20 flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative w-full py-12 flex flex-col items-center justify-center overflow-hidden">
       
       <RoyalBackground />
 
@@ -48,7 +48,7 @@ const Details = () => {
             
             {/* Icono Sobre */}
             <div className="mb-6 inline-block p-4 bg-purple-50 rounded-full border border-purple-100 shadow-sm">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-purple-600">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12 text-purple-600">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
               </svg>
             </div>

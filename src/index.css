@@ -33,6 +33,68 @@
   100% { transform: scale(1); opacity: 1; }
 }
 
+/* ... código anterior ... */
+
+/* --- ANIMACIONES DE MARIPOSAS CORREGIDAS --- */
+/* Nota: Usamos 'translateY' negativo para que suban */
+
+/* Ruta 1: Diagonal suave de Izquierda a Derecha */
+@keyframes fly1 {
+  0% { 
+    transform: translate(0, 10vh) rotate(0deg) scale(0.8); 
+    opacity: 0; 
+  }
+  10% { opacity: 0.9; }
+  50% { 
+    transform: translate(30vw, -50vh) rotate(20deg) scale(1); 
+  }
+  100% { 
+    transform: translate(60vw, -120vh) rotate(45deg) scale(0.8); 
+    opacity: 0; 
+  }
+}
+
+/* Ruta 2: Vuelo central con curvas */
+@keyframes fly2 {
+    0% { 
+      transform: translate(0, 10vh) rotate(-10deg) scale(0.9); 
+      opacity: 0; 
+    }
+    10% { opacity: 0.9; }
+    30% { transform: translate(-10vw, -30vh) rotate(10deg); }
+    60% { transform: translate(10vw, -70vh) rotate(-10deg); }
+    100% { 
+      transform: translate(-5vw, -120vh) rotate(10deg) scale(0.7); 
+      opacity: 0; 
+    }
+}
+
+/* Ruta 3: Diagonal larga de Derecha a Izquierda */
+@keyframes fly3 {
+    0% { 
+      transform: translate(0, 10vh) rotate(10deg) scale(1); 
+      opacity: 0; 
+    }
+    10% { opacity: 0.9; }
+    50% { transform: translate(-40vw, -50vh) rotate(-20deg) scale(1.2); }
+    100% { 
+      transform: translate(-80vw, -120vh) rotate(10deg) scale(0.9); 
+      opacity: 0; 
+    }
+}
+
+/* Aleteo constante */
+@keyframes flutter {
+    0%, 100% { transform: scaleX(1); }
+    50% { transform: scaleX(0.6); }
+}
+
+/* Clases con tiempos largos para que sea relajante */
+.animate-fly1 { animation: fly1 35s linear infinite; }
+.animate-fly2 { animation: fly2 45s linear infinite; }
+.animate-fly3 { animation: fly3 40s linear infinite; }
+.animate-flutter { animation: flutter 0.25s ease-in-out infinite alternate; }
+
 /* Clases de utilidad para usar en React */
 .animate-draw-frame {
   animation: drawFrame 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;

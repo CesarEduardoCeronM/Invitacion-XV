@@ -1,10 +1,12 @@
 import Hero from './components/Hero'
+import Introduction from './components/Introduction'
 import Countdown from './components/Countdown'
 import Location from './components/Location'
 import Details from './components/Details'
 import MusicPlayer from './components/MusicPlayer'
 import ScrollReveal from './components/ScrollReveal'
-import FloralFrame from './components/FloralFrame' // <--- Importar
+import FloralFrame from './components/FloralFrame'
+import Butterflies from './components/Butterflies' // <--- Importar
 
 function App() {
   return (
@@ -13,6 +15,10 @@ function App() {
       <Hero />
       <MusicPlayer />
       
+      <ScrollReveal>
+        <Introduction />
+      </ScrollReveal>
+
       <ScrollReveal>
         <Countdown />
       </ScrollReveal>
@@ -29,8 +35,7 @@ function App() {
         Hecho con cariño para Karla
       </div>
 
-      {/* Marco Floral Fijo (Overlay) */}
-      <FloralFrame /> {/* <--- Agregar aquí al final */}
+      <FloralFrame />
       
     </div>
   )

@@ -6,7 +6,7 @@ const Location = () => {
   const mapLink = "https://www.google.com/maps/search/?api=1&query=Ex+Hacienda+la+Providencia&query_place_id=ChIJ_a2oAuOm0YURRXPP4bKoyLU";
 
   return (
-    <div className="relative w-full py-20 flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative w-full py-14 flex flex-col items-center justify-center overflow-hidden">
       
       {/* Fondo Unificado */}
       <RoyalBackground />

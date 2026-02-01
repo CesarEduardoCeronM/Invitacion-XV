@@ -44,7 +44,7 @@ const Countdown = () => {
   );
 
   return (
-    <div className="relative w-full py-24 flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative w-full py-12 flex flex-col items-center justify-center overflow-hidden">
       
       <RoyalBackground />
       

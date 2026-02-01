@@ -12,14 +12,14 @@ const FloralFrame = () => {
         <img 
           src={floralImg} 
           alt="Decoración floral" 
-          className="absolute top-0 left-0 w-48 md:w-72 opacity-95 -translate-x-4 -translate-y-4"
+          className="absolute top-0 left-0 w-48 md:w-72 opacity-70 -translate-x-4 -translate-y-4"
         />
 
         {/* Esquina Derecha Arriba */}
         <img 
           src={floralImg} 
           alt="Decoración floral" 
-          className="absolute top-0 right-0 w-48 md:w-72 opacity-95 scale-x-[-1] translate-x-4 -translate-y-4"
+          className="absolute top-0 right-0 w-48 md:w-72 opacity-70 scale-x-[-1] translate-x-4 -translate-y-4"
         />
       </div>
 
@@ -31,14 +31,14 @@ const FloralFrame = () => {
         <img 
           src={floralImg} 
           alt="Decoración floral" 
-          className="absolute bottom-0 left-0 w-48 md:w-72 opacity-95 scale-y-[-1] -translate-x-4 translate-y-4"
+          className="absolute bottom-0 left-0 w-48 md:w-72 opacity-70 scale-y-[-1] -translate-x-4 translate-y-4"
         />
 
         {/* Esquina Derecha Abajo */}
         <img 
           src={floralImg} 
           alt="Decoración floral" 
-          className="absolute bottom-0 right-0 w-48 md:w-72 opacity-95 rotate-180 translate-x-4 translate-y-4"
+          className="absolute bottom-0 right-0 w-48 md:w-72 opacity-70 rotate-180 translate-x-4 translate-y-4"
         />
       </div>
     </>

@@ -79,11 +79,6 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-4 left-0 right-0 flex justify-center animate-bounce z-10 opacity-60 animate-fade-in-up delay-2000">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-purple-800">
-          <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-        </svg>
-      </div>
     </div>
   );
 };
