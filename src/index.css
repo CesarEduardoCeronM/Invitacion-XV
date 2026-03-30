@@ -33,62 +33,6 @@
   100% { transform: scale(1); opacity: 1; }
 }
 
-/* ... código anterior ... */
-
-/* --- ANIMACIONES DE MARIPOSAS CORREGIDAS --- */
-/* Nota: Usamos 'translateY' negativo para que suban */
-
-/* Ruta 1: Diagonal suave de Izquierda a Derecha */
-@keyframes fly1 {
-  0% { 
-    transform: translate(0, 10vh) rotate(0deg) scale(0.8); 
-    opacity: 0; 
-  }
-  10% { opacity: 0.9; }
-  50% { 
-    transform: translate(30vw, -50vh) rotate(20deg) scale(1); 
-  }
-  100% { 
-    transform: translate(60vw, -120vh) rotate(45deg) scale(0.8); 
-    opacity: 0; 
-  }
-}
-
-/* Ruta 2: Vuelo central con curvas */
-@keyframes fly2 {
-    0% { 
-      transform: translate(0, 10vh) rotate(-10deg) scale(0.9); 
-      opacity: 0; 
-    }
-    10% { opacity: 0.9; }
-    30% { transform: translate(-10vw, -30vh) rotate(10deg); }
-    60% { transform: translate(10vw, -70vh) rotate(-10deg); }
-    100% { 
-      transform: translate(-5vw, -120vh) rotate(10deg) scale(0.7); 
-      opacity: 0; 
-    }
-}
-
-/* Ruta 3: Diagonal larga de Derecha a Izquierda */
-@keyframes fly3 {
-    0% { 
-      transform: translate(0, 10vh) rotate(10deg) scale(1); 
-      opacity: 0; 
-    }
-    10% { opacity: 0.9; }
-    50% { transform: translate(-40vw, -50vh) rotate(-20deg) scale(1.2); }
-    100% { 
-      transform: translate(-80vw, -120vh) rotate(10deg) scale(0.9); 
-      opacity: 0; 
-    }
-}
-
-/* Aleteo constante */
-@keyframes flutter {
-    0%, 100% { transform: scaleX(1); }
-    50% { transform: scaleX(0.6); }
-}
-
 /* Clases con tiempos largos para que sea relajante */
 .animate-fly1 { animation: fly1 35s linear infinite; }
 .animate-fly2 { animation: fly2 45s linear infinite; }
@@ -118,3 +62,21 @@
 .delay-1000 { animation-delay: 1.0s; }
 .delay-1500 { animation-delay: 1.5s; }
 .delay-2000 { animation-delay: 2.0s; } /* Para el MusicPlayer */
+
+@keyframes sparkleTwinkle {
+  0%, 100% { 
+    opacity: 0; 
+    transform: translateY(0px) scale(0.5); 
+  }
+  50% { 
+    opacity: 0.7; /* No totalmente opaco para que sea sutil */
+    transform: translateY(-20px) scale(1); /* Flotan un poco hacia arriba */
+  }
+}
+
+/* Clase de utilidad para aplicar la animación en React */
+.animate-sparkle-twinkle {
+  animation-name: sparkleTwinkle;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
