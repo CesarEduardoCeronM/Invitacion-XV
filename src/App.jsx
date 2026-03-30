@@ -6,6 +6,7 @@ import Details from './components/Details'
 import MusicPlayer from './components/MusicPlayer'
 import ScrollReveal from './components/ScrollReveal'
 import FloralFrame from './components/FloralFrame'
+import RSVP from './components/RSVP';
 
 function App() {
   return (
@@ -34,6 +35,10 @@ function App() {
 
       <ScrollReveal>
         <Details />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <RSVP />
       </ScrollReveal>
       
       <div className="py-10 text-center text-purple-800/60 text-sm bg-purple-200 relative z-20">
