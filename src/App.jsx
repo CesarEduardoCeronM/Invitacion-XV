@@ -6,7 +6,6 @@ import Details from './components/Details'
 import MusicPlayer from './components/MusicPlayer'
 import ScrollReveal from './components/ScrollReveal'
 import FloralFrame from './components/FloralFrame'
-import Sparkles from './components/Sparkles' // <--- Importar
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
       
       {/* Elementos de fondo fijos (z-index bajos) */}
       <FloralFrame />
-      <Sparkles /> {/* <--- Agregar aquí */}
       
       {/* Elementos de UI fijos (z-index altos) */}
       <MusicPlayer />
