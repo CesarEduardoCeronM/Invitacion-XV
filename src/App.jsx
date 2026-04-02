@@ -1,6 +1,6 @@
 import Hero from './components/Hero'
 import Introduction from './components/Introduction'
-import TheQuinceanera from './components/TheQuinceanera' // <--- IMPORTAR AQUÍ
+import TheQuinceanera from './components/TheQuinceanera'
 import Countdown from './components/Countdown'
 import Gallery from './components/Gallery'
 import Location from './components/Location'
@@ -9,8 +9,14 @@ import RSVP from './components/RSVP'
 import MusicPlayer from './components/MusicPlayer'
 import ScrollReveal from './components/ScrollReveal'
 import FloralFrame from './components/FloralFrame'
+import AdminGuests from './components/AdminGuests' // <--- IMPORTAMOS EL PANEL
 
 function App() {
+  
+  if (window.location.pathname === '/invitados') {
+    return <AdminGuests />;
+  }
+
   return (
     <div className="font-sans antialiased text-slate-800 bg-purple-200 flex flex-col min-h-screen relative">
       
@@ -23,7 +29,6 @@ function App() {
         <Introduction />
       </ScrollReveal>
 
-      {/* NUEVA SECCIÓN: La Quinceañera con su Vestido */}
       <ScrollReveal>
         <TheQuinceanera />
       </ScrollReveal>
@@ -53,8 +58,7 @@ function App() {
         <p className="text-purple-800/70 font-medium mb-3">
           Hecho con cariño para Karla
         </p>
-        
-
+      
         <a 
           href="https://wa.me/527711896342?text=Hola,%20me%20gustó%20mucho%20la%20invitación%20digital%20y%20me%20gustaría%20cotizar%20una." 
           target="_blank" 
