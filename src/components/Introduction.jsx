@@ -24,7 +24,7 @@ const Introduction = () => {
                 <div className="font-serif text-2xl md:text-4xl text-purple-900 font-medium flex flex-col gap-2">
                     <p>Julio César Cerón Vázquez</p>
                     <span className="text-purple-400 text-lg md:text-xl font-light">&</span>
-                    <p>Patricia Martinez Cervantes</p>
+                    <p>Patricia Martínez Cervantes</p>
                 </div>
             </div>
 
