@@ -48,9 +48,11 @@ function App() {
         <RSVP />
       </ScrollReveal>
       
-      <div className="py-10 text-center text-purple-800/60 text-sm bg-purple-200 relative z-20">
+      <div className="py-20 text-center text-purple-800/60 text-sm bg-purple-200 relative z-20">
         Hecho con cariño para Karla
       </div>
+
+      <p></p>
       
     </div>
   )

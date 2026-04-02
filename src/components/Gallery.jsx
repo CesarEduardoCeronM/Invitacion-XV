@@ -12,7 +12,6 @@ const Gallery = () => {
     "/foto7.jpeg",
     "/foto8.jpeg",
     "/foto9.jpeg",
-    "/foto10.jpeg",
     "/foto11.jpeg",
     "/foto12.jpeg",
   ];

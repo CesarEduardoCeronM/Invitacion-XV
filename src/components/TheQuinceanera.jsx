@@ -23,7 +23,7 @@ const TheQuinceanera = () => {
           {/* 📸 AQUÍ VA TU FOTO EDITADA */}
           {/* Instrucciones: Guarda tu foto como 'vestido.jpg' en la carpeta 'public/' */}
           <img 
-            src="/vestido.jpg" 
+            src="/vestido.jpeg" 
             alt="Karla Lizbeth - Quinceañera" 
             className="absolute inset-0 w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-transform duration-700 ease-in-out"
           />
