@@ -48,14 +48,13 @@ function App() {
         <RSVP />
       </ScrollReveal>
       
-      <div className="py-12 flex flex-col items-center justify-center text-center text-sm bg-purple-200 relative z-20">
+      <div className="py-20 flex flex-col items-center justify-center text-center text-sm bg-purple-200 relative z-20">
         
         <p className="text-purple-800/70 font-medium mb-3">
           Hecho con cariño para Karla
         </p>
         
-        {/* Botón de Contacto (Sutil y Elegante) */}
-        {/* Asegúrate de reemplazar 52XXXXXXXXXX con tu número, incluyendo el código de país (52 para México) sin el signo + */}
+
         <a 
           href="https://wa.me/527711896342?text=Hola,%20me%20gustó%20mucho%20la%20invitación%20digital%20y%20me%20gustaría%20cotizar%20una." 
           target="_blank" 
