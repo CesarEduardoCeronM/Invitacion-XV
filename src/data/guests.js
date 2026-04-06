@@ -31,7 +31,7 @@ export const guestsData = [
   // INVITADOS DE CESAR
   // ==========================================
   { name: "AURELIO CERÓN OROZCO", tickets: 2 },
-  { name: "ABIMELEC CERÓN VÁZQUEZ", tickets: 3 },
+  { name: "ABIMELEC CERÓN VÁZQUEZ", tickets: 4 },
   { name: "ELIAN ARTEGA CERÓN", tickets: 2 },
   { name: "JOSUE CERÓN VÁZQUEZ", tickets: 4 },
   { name: "JONATHAN CERÓN VÁZQUEZ", tickets: 3 },
