@@ -8,7 +8,7 @@ const SmallHeaderOrnament = () => (
 );
 
 const Countdown = () => {
-  const targetDate = new Date('2026-06-27T14:30:00').getTime();
+  const targetDate = new Date('2026-06-27T15:00:00').getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0, hours: 0, minutes: 0, seconds: 0,
@@ -50,13 +50,17 @@ const Countdown = () => {
       
       <div className="relative z-10 flex flex-col items-center px-4">
         
+        <p className="text-xl md:text-3xl font-bold tracking-[0.2em] text-purple-800 font-sans uppercase mb-8 text-center">
+          La cita es a las 3:00 PM
+        </p>
+
         {/* Encabezado decorado */}
         <SmallHeaderOrnament />
+        
         <h3 className="text-2xl md:text-3xl font-serif text-purple-900 tracking-[0.2em] font-bold text-center">
           SOLO FALTAN
         </h3>
         <RoyalDivider className="mb-10 md:w-64 h-6 opacity-60" />
-        
         
         {/* Contenedor de las cajitas */}
         <div className="flex flex-wrap justify-center gap-3 md:gap-6">
